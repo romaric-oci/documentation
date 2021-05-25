@@ -21,7 +21,7 @@ dictionary, where each key specifies module metadatum.
     {
         'name': "A Module",
         'version': '1.0',
-        'depends': ['base'],
+        'depends': ['mail'],
         'author': "Author Name",
         'category': 'Category',
         'description': """
@@ -79,6 +79,8 @@ Available manifest fields are:
 
     When a module is installed, all of its dependencies are installed before
     it. Likewise dependencies are loaded before a module is loaded.
+
+    All modules depends on module ``base`` even if it's not specified explicitly.
 ``data`` (``list(str)``)
     List of data files which must always be installed or updated with the
     module. A list of paths from the module root directory

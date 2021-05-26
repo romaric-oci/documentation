@@ -222,10 +222,6 @@ header.o_main_header {
         padding-bottom: .5rem;
     }
 
-    .toctree-l1 > ul {
-        padding-left: 1.5rem;
-    }
-
     ul {
         .o_deepest_active_toc_entry {
             background-color: $gray-lightest;
@@ -287,14 +283,16 @@ header.o_main_header {
         padding-left: 1rem;
 
         li {
-            padding-left: .2rem;
+            &.toctree_l2 {
+                padding-left: .2rem;
+            }
             > a.reference {
-                padding-left: 1.2rem;
+                padding-left: .8rem;
             }
 
             a {
                 display: inline-block;
-                padding: .5rem 0;
+                padding: .4rem 0;
                 color: inherit;
                 opacity: .75;
 

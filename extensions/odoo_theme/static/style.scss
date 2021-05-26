@@ -621,7 +621,7 @@ header.o_main_header {
                 > h2 {
                     font-family: $font-family-serif;
                     color: $gray-darker;
-                    margin-top: 3rem;
+                    margin-top: 2rem;
                     margin-bottom: 1rem;
                     padding-bottom: .3rem;
                     border-bottom: 1px solid $gray-light;
@@ -933,7 +933,7 @@ footer {
     .o_get_help {
         padding-top: 3rem;
         padding-bottom: 3rem;
-        background: $gray-100;
+        background: $gray-lighter;
         @include media-breakpoint-up(lg) {
             padding-left: calc(#{$o-side-nav-width} + 3rem)
         }

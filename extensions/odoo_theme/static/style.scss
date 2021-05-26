@@ -224,7 +224,9 @@ header.o_main_header {
 
     ul {
         .o_deepest_active_toc_entry {
-            background-color: $gray-lightest;
+            background-color: $gray-lighter;
+            border-left: 3px solid $gray-lighter;
+            margin-left: -3px;
         }
 
         > .toctree-l1 {
@@ -328,7 +330,7 @@ header.o_main_header {
                         @include o-transform(rotate(90deg));
                     }
                 }
-                > a , > .o_toc_entry_wrapper a {
+                > a , > .o_toc_entry_wrapper a, > .o_toc_entry_wrapper i {
                     font-weight: $fw_bold;
                     opacity: 1;
                 }

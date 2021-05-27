@@ -210,7 +210,7 @@ header.o_main_header {
         padding-left: 3rem;
     }
     @include o-transition(all, .3s);
-    padding-top: 1rem;
+    padding-top: 4rem;
     padding-left: 1rem;
     background-color: lighten($o-violet-dark, 70%) ;
     z-index: 10;

@@ -230,14 +230,9 @@ header.o_main_header {
         }
 
         > .toctree-l1 {
-            &[class*="o_menu_"] > .o_toc_entry_wrapper > i {
-                opacity: .75;
-                
-                &:before {
-                    @include o-inline-icon($i-doc-apps, 0 1rem 0 0);
-                    color: $o-violet-dark;
-                    margin-right: 0.5rem;
-                }
+            &[class*="o_menu_"] > .o_toc_entry_wrapper > i:before {
+                @include o-inline-icon($i-doc-apps, 0 5px 0 0);
+                color: $o-violet-dark;
             }
 
             &.o_menu_applications > .o_toc_entry_wrapper > i:before{
@@ -303,6 +298,10 @@ header.o_main_header {
                 }
             }
 
+            > .o_toc_entry_wrapper i {
+                opacity: .75;
+            }
+
             &:not(.toctree-l1) {
                 .o_toc_entry_wrapper {
                     &:not(.o_page_toc_title) {
@@ -324,6 +323,7 @@ header.o_main_header {
                     }
                 }
             }
+
             &.o_active_toc_entry {
                 &:not(.toctree-l1) > .o_toc_entry_wrapper {
                     i[class^="i-"]:not(.collapsed) {

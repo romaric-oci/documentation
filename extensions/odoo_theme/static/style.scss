@@ -449,6 +449,12 @@ header.o_main_header {
                     border-color: #00A09D;
                 }
             }
+            .row:first-of-type h2.border-top {
+                @include media-breakpoint-up(lg) {
+                    border-top: 0 solid transparent !important;
+                }
+            }
+
             h5 {
                 font-size: 12px;
             }

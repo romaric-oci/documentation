@@ -571,13 +571,14 @@ header.o_main_header {
             }
         }
 
-        article.doc-body {
-            position: relative;
-
-            // hide ugly toctree on "in between" pages (e.g.: /applications.html, /administration.html, ...)
+        &.o_hide_toc {
             .toctree-wrapper {
                 display: none;
             }
+        }
+
+        article.doc-body {
+            position: relative;
 
             .o_git_link {
                 @include font-size($font-size-secondary);

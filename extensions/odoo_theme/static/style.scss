@@ -101,6 +101,10 @@ header.o_main_header {
 
 
     .highlight-link {
+        @media only screen and (max-width: 1242px) and (min-width: 992px){
+            position: absolute;
+            bottom: 0;
+        }
         margin-bottom: 0;
         padding: 0 1rem;
         text-align: center;

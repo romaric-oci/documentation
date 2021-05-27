@@ -203,4 +203,4 @@ the user can have access.
 
 .. seealso::
    - :doc:`../multi_companies`
-   - :doc:`../../settings/users_and_features`
+   - :doc:`../../general`

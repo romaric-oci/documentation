@@ -2,7 +2,6 @@
 General
 =======
 
-
 .. toctree::
 
     general/odoo_basics
